@@ -2,26 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <title>My Project</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Open API Project</title>
+    <link rel="stylesheet" href="css/index.css"/>
   </head>
   <body>
     <header>
       <h1>My Open API Project</h1>
     </header>
     <main>
+      <!-- Description -->
       <section id="weather">
-        <h2>Check Weather</h2>
-        <p>Input location and check current weather!</p>
+        <p>Input city name and check today's weather and 7-day forecast!</p>
       </section>
-      <section id="weather info">
-        <input type="text" id="cityInput" placeholder="Enter city name" />
-        <button id="searchBtn">Get Weather</button>
+      <!-- Input section and current weather -->
+      <section id="weatherInput">
+        <input type="text" id="cityInput" placeholder="Enter city name"/>
+        <button id="searchBtn">Search</button>
         <div id="weatherContainer">
           <div id="weatherIcon"></div>
-          <div id="weatherInfo"></div>
+          <pre id="weatherInfo"></pre>
         </div>
+      </section>
+      <!-- 7-day forecast section -->
+      <section id="forecastTitle">
+        <h2>7-Day Forecast</h2>
+        <div id="forecast"></div>
       </section>
     </main>
     <script src="js/index.js"></script>
